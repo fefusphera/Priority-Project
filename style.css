@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Lora", serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(184, 111, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 111, 182, 1) 0%,
+    rgba(145, 99, 189, 1) 0%,
+    rgba(114, 167, 210, 1) 100%
+  );
+  /* border-radius: 5px; */
+  padding-bottom: 20px;
+  margin: 0px;
+}
+
+header h1 {
+  align-self: center;
+  color: rgb(230, 230, 255);
+  font-size: 40px;
+  margin: 1rem 0;
+}
+
+header button {
+  align-self: center;
+  background-color: rgb(216, 216, 216);
+  color: rgb(57, 56, 56);
+  font-weight: 400;
+  /* width: fit-content; */
+}
+
+.mainSection {
+  padding: 0 0.5rem 0.5rem;
+}
+
+.mainSection div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainSection h2 {
+  /* border-bottom: 2px solid black; */
+  margin: 1rem 0;
+  color: rgb(57, 56, 56);
+}
+
+.completedStyle {
+  background: rgb(184, 111, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 111, 182, 1) 0%,
+    rgba(145, 99, 189, 1) 0%,
+    rgba(114, 167, 210, 1) 100%
+  );
+  border-radius: 5px;
+  box-shadow: 1.5px 2px 1px #888888;
+  color: rgb(230, 230, 255);
+  font-weight: 500;
+  /* filter: blur(2px); */
+}
+
+.notCompletedStyle {
+  background-color: rgb(216, 216, 216);
+  border-radius: 5px;
+  color: rgb(57, 56, 56);
+  box-shadow: 1.5px 2px 1px #888888;
+}
+
+ul {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+li {
+  display: block;
+  color: white;
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: rgb(184, 111, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 111, 182, 1) 0%,
+    rgba(145, 99, 189, 1) 0%,
+    rgba(114, 167, 210, 1) 100%
+  );
+  padding: 20px;
+  margin: 0px;
+}
+
+footer p {
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  ul {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+  }
+
+  li {
+    display: block;
+    color: white;
+    padding: 1rem;
+  }
+
+  .completedStyle:hover {
+    background: none;
+    background-color: lightskyblue;
+    color: rgb(57, 56, 56);
+  }
+}
