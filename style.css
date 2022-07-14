@@ -6,17 +6,15 @@
   font-family: "Lora", serif;
 }
 
+body {
+  background-color: #f5ebe0;
+}
+
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(184, 111, 182);
-  background: linear-gradient(
-    0deg,
-    rgba(184, 111, 182, 1) 0%,
-    rgba(145, 99, 189, 1) 0%,
-    rgba(114, 167, 210, 1) 100%
-  );
+  background-color: #d5bdaf;
   /* border-radius: 5px; */
   padding-bottom: 20px;
   margin: 0px;
@@ -24,16 +22,16 @@ header {
 
 header h1 {
   align-self: center;
-  color: rgb(230, 230, 255);
+  color: white;
   font-size: 40px;
   margin: 1rem 0;
 }
 
 header button {
   align-self: center;
-  background-color: rgb(216, 216, 216);
-  color: rgb(57, 56, 56);
-  font-weight: 400;
+  background-color: #d5bdaf;
+  color: white;
+  font-weight: bold;
   /* width: fit-content; */
 }
 
@@ -51,28 +49,22 @@ header button {
 .mainSection h2 {
   /* border-bottom: 2px solid black; */
   margin: 1rem 0;
-  color: rgb(57, 56, 56);
+  color: #a98467;
 }
 
 .completedStyle {
-  background: rgb(184, 111, 182);
-  background: linear-gradient(
-    0deg,
-    rgba(184, 111, 182, 1) 0%,
-    rgba(145, 99, 189, 1) 0%,
-    rgba(114, 167, 210, 1) 100%
-  );
+  background-color: #d5bdaf;
   border-radius: 5px;
   box-shadow: 1.5px 2px 1px #888888;
-  color: rgb(230, 230, 255);
+  color: white;
   font-weight: 500;
   /* filter: blur(2px); */
 }
 
 .notCompletedStyle {
-  background-color: rgb(216, 216, 216);
+  background-color: #e3d5ca;
   border-radius: 5px;
-  color: rgb(57, 56, 56);
+  color: #a98467;
   box-shadow: 1.5px 2px 1px #888888;
 }
 
@@ -94,13 +86,7 @@ li {
 footer {
   display: flex;
   justify-content: center;
-  background: rgb(184, 111, 182);
-  background: linear-gradient(
-    0deg,
-    rgba(184, 111, 182, 1) 0%,
-    rgba(145, 99, 189, 1) 0%,
-    rgba(114, 167, 210, 1) 100%
-  );
+  background-color: #d5bdaf;
   padding: 20px;
   margin: 0px;
 }
@@ -133,8 +119,11 @@ footer p {
   }
 
   .completedStyle:hover {
-    background: none;
-    background-color: lightskyblue;
-    color: rgb(57, 56, 56);
+    background-color: #d5bdaf;
+    color: rgba(57, 56, 56, 0);
+    background-image: url(https://www.pngall.com/wp-content/uploads/8/Task-PNG-Free-Image.png);
+    background-size: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
