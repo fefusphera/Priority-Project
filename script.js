@@ -7,14 +7,6 @@ const lowPriorityEl = document.querySelector(".lowP");
 const $button = document.querySelector("button");
 const $button2 = document.querySelector(".button2");
 
-//quando button è cliccato, button 2 si "unclicka" e viceversa
-
-$button.addEventListener("click", () => {
-  if ($button2.click) {
-    $button2 = disabled;
-  }
-});
-
 fetch(BASE_URL)
   .then((response) => {
     return response.json();
@@ -33,11 +25,6 @@ fetch(BASE_URL)
     const filteredPriorityLow = dataPriority.filter(
       (object) => object.priority == 1 || object.priority == 0
     );
-
-    console.log(dataPriority);
-    console.log(filteredPriorityHigh);
-    console.log(filteredPriorityMed);
-    console.log(filteredPriorityLow);
 
     filteredPriorityHigh.forEach((object) => {
       const liEl = document.createElement("li");
@@ -114,18 +101,4 @@ fetch(BASE_URL)
       }
       lowPriorityEl.appendChild(liEl3);
     });
-
-    const filteredComplete = dataPriority.filter(
-      (object) => object.completed == true
-    );
-
-    console.table(filteredComplete);
   });
-
-// function showComplete(filteredPriorityHigh) {
-//   if (filteredPriorityHigh.completed == true) {
-//     liEl.style.display = "block";
-//   } else {
-//     liEl.style.display = "none";
-//   }
-// }
